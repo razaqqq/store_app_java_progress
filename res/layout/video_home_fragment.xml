@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="300dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/video_home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/black_shirt_female" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_chat_white"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="180, 5RB"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:id="@+id/video_home_fragment_viewed"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripsi"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:id="@+id/video_home_vragment_desc"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubDeskripsi"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:id="@+id/video_home_fragment_sub_desc"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

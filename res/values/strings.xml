@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">StoreApps</string>
+    <string name="db_store_app">store_app</string>
+    <string name="db_user">user</string>
+    <string name="db_user_account_setting">user_account_setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- DATABASE -->
+    <string name="store_app">store_app</string>
+    <string name="user">user</string>
+    <string name="store">store</string>
+    <string name="product">product</string>
+    <string name="store_information">store_information</string>
+    <string name="video_user">video_user</string>
+    <string name="video_global">video_global</string>
+
+    <!--DataBase Storage-->
+    <string name="_my_store">_my_store</string>
+    <string name="_product_image_user">_product_image_user</string>
+    <string name="_video_user">_video_user</string>
+
+</resources>

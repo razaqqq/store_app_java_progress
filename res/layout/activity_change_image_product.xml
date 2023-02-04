@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.ChangeImageProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Your Image Product"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@color/teal_700"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/black_shirt_female"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/activity_change_image_product_product_image"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="camera"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:id="@+id/activity_change_image_product_camera"/>
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:text="Storeage"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:id="@+id/activity_change_image_product_storage"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_200"
+        android:padding="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:id="@+id/activity_change_image_product_back"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/activity_change_image_product_save"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

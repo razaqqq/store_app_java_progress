@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       >
+       <ImageView
+           android:layout_width="250dp"
+           android:layout_height="250dp"
+           android:src="@drawable/ic_baseline_video_call_24_250"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/img_video"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Belum Ada Video"
+           android:layout_below="@+id/img_video"
+           android:layout_centerHorizontal="true"
+           android:textSize="24sp"
+           android:textColor="@color/black"
+           android:id="@+id/belum_video"
+           />
+
+       <Button
+           android:id="@+id/upload_video"
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:layout_below="@+id/belum_video"
+           android:layout_marginLeft="40dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="40dp"
+           android:drawableLeft="@drawable/ic_baseline_video_library_24"
+           android:padding="10dp"
+           android:text="Posting Video Pertama Saya" />
+   </RelativeLayout>
+
+</RelativeLayout>

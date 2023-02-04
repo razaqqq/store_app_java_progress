@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.UploadVidePreviewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:layout_centerVertical="true"
+            android:id="@+id/activity_upload_video_preview_back"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/activity_upload_video_preview_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="Preview The Video"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="115dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/activity_upload_video_preview_video"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Play"
+                android:id="@+id/activity_upload_video_play"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="100dp"
+                android:text="upload"
+                android:id="@+id/activity_upload_video_preview_upload"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/activity_upload_video_preview_framelayout"/>
+
+
+</RelativeLayout>

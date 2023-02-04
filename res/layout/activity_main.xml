@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:id="@+id/main_activity_parent"
+        >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activity_main_rec_view_parent"
+            >
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentTop="true"-->
+
+<!--                android:id="@+id/activity_main_rec_view_top">-->
+<!--&lt;!&ndash;                <com.google.android.material.tabs.TabLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="#e6e6e6"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/activity_main_rec_view_top_tab_layout"/>&ndash;&gt;-->
+<!--            </RelativeLayout>-->
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/activity_main_rec_view_center">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/activity_main_rec_view_center_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_rec_view_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#e6e6e6"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/tab_layout_bottom"/>
+
+<!--                <include layout="@layout/bottom_navigation_view" />-->
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_activity_frame_layout"/>
+
+    </FrameLayout>
+
+
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.AddParoductChangeImageFragment"
+    android:background="@color/white"
+    android:id="@+id/fragment_add_product_change_image_frame_layout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/rel_1"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:id="@+id/fragment_add_product_change_image_back"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_1"
+            android:layout_marginTop="70dp"
+            android:id="@+id/rel_2"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/bikini_03"
+                android:id="@+id/fragment_add_product_change_image_preview"
+                android:scaleType="centerInside"
+                />
+        </RelativeLayout>
+        |<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_2"
+        android:id="@+id/rel_3"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CAMERA"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/teal_200"
+                android:id="@+id/fragment_add_product_chane_image_camera"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="STORAGE"
+                android:id="@+id/fragment_add_product_change_image_storage"
+                android:backgroundTint="@color/teal_200"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:id="@+id/fragment_add_product_change_image_save"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Save"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_check_circle_24"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

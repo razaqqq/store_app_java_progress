@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_fragment_parent"
+        >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/asu"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rel_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/frame_layout"
+                        android:background="@color/teal_200">
+
+                        <RelativeLayout
+                            android:id="@+id/top"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/user_fragment_chat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/ic_baseline_chat_24" />
+
+                            <ImageView
+                                android:id="@+id/user_fragment_basket"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/user_fragment_chat"
+
+                                android:src="@drawable/ic_baseline_shopping_basket_24" />
+
+                            <ImageView
+                                android:id="@+id/user_fragment_setting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:layout_toLeftOf="@+id/user_fragment_basket"
+
+                                android:src="@drawable/ic_baseline_settings_24" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:id="@+id/top123"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/top_bar"
+                                >
+
+                                <ImageView
+                                    android:id="@+id/profile_image"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:src="@mipmap/ic_launcher" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_toRightOf="@+id/profile_image"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/user_fragment_username"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Username"
+                                        android:textColor="@color/white"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/user_fragment_members"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Members" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+
+                                            >
+
+                                            <TextView
+                                                android:id="@+id/pengikut"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Follower" />
+
+                                            <TextView
+                                                android:id="@+id/user_fragment_follower"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_toRightOf="@+id/pengikut"
+                                                android:text="0" />
+                                        </RelativeLayout>
+
+                                        <ImageView
+                                            android:layout_width="10dp"
+                                            android:layout_height="10dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:src="@drawable/ic_baseline_perm_identity_24" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/rel_pengikut"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/mengikuti"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Following" />
+
+                                            <TextView
+                                                android:id="@+id/user_fragment_following"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_toRightOf="@+id/mengikuti"
+                                                android:text="0" />
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </FrameLayout>
+
+
+
+                </RelativeLayout>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/rel_1" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tab_layout">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager_user_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp" />
+                </RelativeLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+        x
+
+
+
+    </RelativeLayout>
+</layout>
